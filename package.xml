@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>web_rosbag_manager</name>
-  <version>0.0.0</version>
+  <version>0.1.0</version>
   <description>The web_rosbag_manager package</description>
   <maintainer email="dev@work-robotics.co.jp">WorkRobotics</maintainer>
   <license>Apache-2.0</license>
