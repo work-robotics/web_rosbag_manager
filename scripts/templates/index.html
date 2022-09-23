@@ -1,0 +1,61 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">ROSBag WebManager</span>
+        <span id="status" class="navbar-text d-flex">
+          Status: Not connected
+        </span>
+      </div>
+    </nav>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card text-dark mt-3" style="height: 22rem;">
+            <h5 class="card-header">List</h5>
+            <div class="card-body overflow-auto" id="database-body">
+              <table id="database" class="table table-hover table-sm"></table>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class=" card text-dark mt-3" style="height: 28rem;">
+            <h5 class="card-header">Info</h5>
+            <div class="card-body overflow-auto" id="info">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card text-dark mt-3">
+            <div class="card-header">
+              <h5>Record</h5>
+              <input class="btn btn-outline-danger" type="button" id="record-button" value="Record"
+                onclick="rosBagWebManager.recordStartButton()" />
+              <input class="btn btn-outline-secondary" type="button" id="stop-button" value="Stop"
+                onclick="rosBagWebManager.recordStopButton()" />
+            </div>
+            <div class="card-body overflow-auto" style="height: 22rem;">
+              <table id="topiclist" class="table table-hover table-bordered table-sm table-info"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src=" ./static/main.js"></script>
+    <script src="./static/jquery-3.6.0.min.js"></script>
+    <script src="./static/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>

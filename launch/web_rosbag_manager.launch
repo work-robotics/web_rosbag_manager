@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="web_rosbag_manager" pkg="web_rosbag_manager" type="web_rosbag_manager.py" respawn="true"/>
+  <node name="rosbag_manager" pkg="web_rosbag_manager" type="rosbag_manager.py" respawn="true"/>
+</launch>
